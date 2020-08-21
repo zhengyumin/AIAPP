@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  *	@brief  filepath the use of : "documents/db/" + fileName + ".db"
+ *          add to global cache with instance created
  *  refer:  FMDatabase.h  + (instancetype)databaseWithPath:(NSString *)inPath;
  */
 - (instancetype)initWithDBName:(NSString *)dbname;
@@ -40,6 +41,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithDBPath:(NSString *)filePath;
 - (void)setDBPath:(NSString *)filePath;
+
+/**
+ *    @brief  closing a database connection and remove instance for global cache
+ */
+- (void)closeDB;
+
+/**
+ *    @brief  当数据库无操作 多少秒后 自动关闭数据库连接, 区间 [10 ~ int_max]  默认：20秒
+ */
+- (void)setAutoCloseDBTime:(NSInteger)time;
 
 /**
  *  @brief current encryption key.

@@ -11,6 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LKDBUtils : NSObject
+
+// 创建文件路径所需要的文件夹
++ (BOOL)createDirectoryWithFilePath:(NSString *)filePath;
+
 ///返回根目录路径 "document"
 + (NSString *)getDocumentPath;
 ///返回 "document/dir/" 文件夹路径
@@ -47,14 +51,6 @@ NS_ASSUME_NONNULL_BEGIN
 #endif
 #else
 #define LKErrorLog(...)
-#endif
-
-#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_5_0 || __MAC_OS_X_VERSION_MIN_REQUIRED >= __MAC_10_7
-#define LKDBWeak weak
-#define __LKDBWeak __weak
-#else
-#define LKDBWeak unsafe_unretained
-#define __LKDBWeak
 #endif
 
 static NSString *const LKSQL_Type_Text = @"text";

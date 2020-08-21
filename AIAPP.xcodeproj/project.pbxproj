@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12BE9E2A8D5AC97EB2DD2C02 /* libPods-AIAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5ECF46B7CE991A15F10AC9 /* libPods-AIAPP.a */; };
+		187BA3CD24EF80A500D76767 /* NSObject+AICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BA3CC24EF80A500D76767 /* NSObject+AICommon.m */; };
+		187BA3D024EFB52100D76767 /* AIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BA3CF24EFB52100D76767 /* AIViewController.m */; };
+		8594EC5C457813A7DF0C475D /* Pods_AIAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62939EFC16EAA7CAC9E7CBD2 /* Pods_AIAPP.framework */; };
 		F325E1AE1FECB7BF00028C1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F325E1A41FECB7BF00028C1A /* AppDelegate.m */; };
 		F325E1AF1FECB7BF00028C1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F325E1A71FECB7BF00028C1A /* Assets.xcassets */; };
 		F325E1B21FECB7BF00028C1A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F325E1AC1FECB7BF00028C1A /* Info.plist */; };
@@ -17,8 +19,17 @@
 
 /* Begin PBXFileReference section */
 		016E0B101B3405D3328A1B37 /* Pods-AIAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AIAPP/Pods-AIAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		187BA3C324EF7F6100D76767 /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		187BA3C424EF7F6100D76767 /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
+		187BA3C524EF7F6100D76767 /* FontAndColorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAndColorMacros.h; sourceTree = "<group>"; };
+		187BA3C624EF7F6100D76767 /* URLMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLMacros.h; sourceTree = "<group>"; };
+		187BA3C724EF7F6100D76767 /* SystemMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemMacros.h; sourceTree = "<group>"; };
+		187BA3CB24EF80A500D76767 /* NSObject+AICommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+AICommon.h"; sourceTree = "<group>"; };
+		187BA3CC24EF80A500D76767 /* NSObject+AICommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AICommon.m"; sourceTree = "<group>"; };
+		187BA3CE24EFB52100D76767 /* AIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIViewController.h; sourceTree = "<group>"; };
+		187BA3CF24EFB52100D76767 /* AIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIViewController.m; sourceTree = "<group>"; };
 		50C2C51149336170B243D1FE /* Pods-AIAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-AIAPP/Pods-AIAPP.release.xcconfig"; sourceTree = "<group>"; };
-		5C5ECF46B7CE991A15F10AC9 /* libPods-AIAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AIAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62939EFC16EAA7CAC9E7CBD2 /* Pods_AIAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F325E1A31FECB7BF00028C1A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F325E1A41FECB7BF00028C1A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F325E1A71FECB7BF00028C1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,11 +38,6 @@
 		F325E1B41FECB86E00028C1A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F325E1B81FF3366300028C1A /* AppDelegate+AppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AppService.h"; sourceTree = "<group>"; };
 		F325E1B91FF3366300028C1A /* AppDelegate+AppService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AppService.m"; sourceTree = "<group>"; };
-		F325E1BB1FF33AE400028C1A /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
-		F325E1BC1FF3420800028C1A /* FontAndColorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAndColorMacros.h; sourceTree = "<group>"; };
-		F325E1BD1FF34F5000028C1A /* SystemMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemMacros.h; sourceTree = "<group>"; };
-		F325E1BE1FF38EF400028C1A /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
-		F325E1BF1FF39CDD00028C1A /* URLMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLMacros.h; sourceTree = "<group>"; };
 		F3BD64841FEC1339005EAB31 /* AIAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -40,13 +46,99 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12BE9E2A8D5AC97EB2DD2C02 /* libPods-AIAPP.a in Frameworks */,
+				8594EC5C457813A7DF0C475D /* Pods_AIAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		187BA3BC24EF7F6100D76767 /* AICommon */ = {
+			isa = PBXGroup;
+			children = (
+				187BA3BD24EF7F6100D76767 /* AINetwork */,
+				187BA3BE24EF7F6100D76767 /* AIDatabase */,
+				187BA3BF24EF7F6100D76767 /* AIBase */,
+				187BA3C024EF7F6100D76767 /* AITool */,
+				187BA3C124EF7F6100D76767 /* AI3rd */,
+				187BA3C224EF7F6100D76767 /* AIDefine */,
+				187BA3C824EF7F6100D76767 /* AIManager */,
+				187BA3C924EF7F6100D76767 /* AIExtension */,
+			);
+			path = AICommon;
+			sourceTree = "<group>";
+		};
+		187BA3BD24EF7F6100D76767 /* AINetwork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AINetwork;
+			sourceTree = "<group>";
+		};
+		187BA3BE24EF7F6100D76767 /* AIDatabase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AIDatabase;
+			sourceTree = "<group>";
+		};
+		187BA3BF24EF7F6100D76767 /* AIBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AIBase;
+			sourceTree = "<group>";
+		};
+		187BA3C024EF7F6100D76767 /* AITool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AITool;
+			sourceTree = "<group>";
+		};
+		187BA3C124EF7F6100D76767 /* AI3rd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AI3rd;
+			sourceTree = "<group>";
+		};
+		187BA3C224EF7F6100D76767 /* AIDefine */ = {
+			isa = PBXGroup;
+			children = (
+				187BA3C324EF7F6100D76767 /* UtilsMacros.h */,
+				187BA3C424EF7F6100D76767 /* CommonMacros.h */,
+				187BA3C524EF7F6100D76767 /* FontAndColorMacros.h */,
+				187BA3C624EF7F6100D76767 /* URLMacros.h */,
+				187BA3C724EF7F6100D76767 /* SystemMacros.h */,
+			);
+			path = AIDefine;
+			sourceTree = "<group>";
+		};
+		187BA3C824EF7F6100D76767 /* AIManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AIManager;
+			sourceTree = "<group>";
+		};
+		187BA3C924EF7F6100D76767 /* AIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				187BA3CA24EF807F00D76767 /* NSObject+AICommon */,
+			);
+			path = AIExtension;
+			sourceTree = "<group>";
+		};
+		187BA3CA24EF807F00D76767 /* NSObject+AICommon */ = {
+			isa = PBXGroup;
+			children = (
+				187BA3CB24EF80A500D76767 /* NSObject+AICommon.h */,
+				187BA3CC24EF80A500D76767 /* NSObject+AICommon.m */,
+			);
+			path = "NSObject+AICommon";
+			sourceTree = "<group>";
+		};
 		DC9826FBC19FD181F55508FB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -59,292 +151,9 @@
 		DF43769143C139237BBAB3E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5C5ECF46B7CE991A15F10AC9 /* libPods-AIAPP.a */,
+				62939EFC16EAA7CAC9E7CBD2 /* Pods_AIAPP.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F325E17F1FECB7BF00028C1A /* AIHelper */ = {
-			isa = PBXGroup;
-			children = (
-				F325E1801FECB7BF00028C1A /* AIBase */,
-				F325E1811FECB7BF00028C1A /* AICategory */,
-				F325E1821FECB7BF00028C1A /* AICommonUI */,
-				F325E1831FECB7BF00028C1A /* AIDatabase */,
-				F325E1841FECB7BF00028C1A /* AIDefine */,
-				F325E1851FECB7BF00028C1A /* AIManager */,
-				F325E1861FECB7BF00028C1A /* AINetwork */,
-				F325E1871FECB7BF00028C1A /* AIThridParty */,
-				F325E1881FECB7BF00028C1A /* AIUtils */,
-			);
-			path = AIHelper;
-			sourceTree = "<group>";
-		};
-		F325E1801FECB7BF00028C1A /* AIBase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AIBase;
-			sourceTree = "<group>";
-		};
-		F325E1811FECB7BF00028C1A /* AICategory */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AICategory;
-			sourceTree = "<group>";
-		};
-		F325E1821FECB7BF00028C1A /* AICommonUI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AICommonUI;
-			sourceTree = "<group>";
-		};
-		F325E1831FECB7BF00028C1A /* AIDatabase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AIDatabase;
-			sourceTree = "<group>";
-		};
-		F325E1841FECB7BF00028C1A /* AIDefine */ = {
-			isa = PBXGroup;
-			children = (
-				F325E1BB1FF33AE400028C1A /* CommonMacros.h */,
-				F325E1BC1FF3420800028C1A /* FontAndColorMacros.h */,
-				F325E1BD1FF34F5000028C1A /* SystemMacros.h */,
-				F325E1BE1FF38EF400028C1A /* UtilsMacros.h */,
-				F325E1BF1FF39CDD00028C1A /* URLMacros.h */,
-			);
-			path = AIDefine;
-			sourceTree = "<group>";
-		};
-		F325E1851FECB7BF00028C1A /* AIManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AIManager;
-			sourceTree = "<group>";
-		};
-		F325E1861FECB7BF00028C1A /* AINetwork */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AINetwork;
-			sourceTree = "<group>";
-		};
-		F325E1871FECB7BF00028C1A /* AIThridParty */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AIThridParty;
-			sourceTree = "<group>";
-		};
-		F325E1881FECB7BF00028C1A /* AIUtils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AIUtils;
-			sourceTree = "<group>";
-		};
-		F325E1891FECB7BF00028C1A /* AIModules */ = {
-			isa = PBXGroup;
-			children = (
-				F325E18A1FECB7BF00028C1A /* Home */,
-				F325E1901FECB7BF00028C1A /* Login */,
-				F325E1961FECB7BF00028C1A /* Mine */,
-				F325E19C1FECB7BF00028C1A /* TabBar */,
-			);
-			path = AIModules;
-			sourceTree = "<group>";
-		};
-		F325E18A1FECB7BF00028C1A /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				F325E18B1FECB7BF00028C1A /* Controller */,
-				F325E18C1FECB7BF00028C1A /* Logic */,
-				F325E18D1FECB7BF00028C1A /* Model */,
-				F325E18E1FECB7BF00028C1A /* Service */,
-				F325E18F1FECB7BF00028C1A /* View */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		F325E18B1FECB7BF00028C1A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F325E18C1FECB7BF00028C1A /* Logic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Logic;
-			sourceTree = "<group>";
-		};
-		F325E18D1FECB7BF00028C1A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F325E18E1FECB7BF00028C1A /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		F325E18F1FECB7BF00028C1A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F325E1901FECB7BF00028C1A /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				F325E1911FECB7BF00028C1A /* Controller */,
-				F325E1921FECB7BF00028C1A /* Logic */,
-				F325E1931FECB7BF00028C1A /* Model */,
-				F325E1941FECB7BF00028C1A /* Service */,
-				F325E1951FECB7BF00028C1A /* View */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		F325E1911FECB7BF00028C1A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F325E1921FECB7BF00028C1A /* Logic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Logic;
-			sourceTree = "<group>";
-		};
-		F325E1931FECB7BF00028C1A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F325E1941FECB7BF00028C1A /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		F325E1951FECB7BF00028C1A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F325E1961FECB7BF00028C1A /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				F325E1971FECB7BF00028C1A /* Controller */,
-				F325E1981FECB7BF00028C1A /* Logic */,
-				F325E1991FECB7BF00028C1A /* Model */,
-				F325E19A1FECB7BF00028C1A /* Service */,
-				F325E19B1FECB7BF00028C1A /* View */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		F325E1971FECB7BF00028C1A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F325E1981FECB7BF00028C1A /* Logic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Logic;
-			sourceTree = "<group>";
-		};
-		F325E1991FECB7BF00028C1A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F325E19A1FECB7BF00028C1A /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		F325E19B1FECB7BF00028C1A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F325E19C1FECB7BF00028C1A /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				F325E19D1FECB7BF00028C1A /* Controller */,
-				F325E19E1FECB7BF00028C1A /* Logic */,
-				F325E19F1FECB7BF00028C1A /* Model */,
-				F325E1A01FECB7BF00028C1A /* Service */,
-				F325E1A11FECB7BF00028C1A /* View */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
-		F325E19D1FECB7BF00028C1A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F325E19E1FECB7BF00028C1A /* Logic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Logic;
-			sourceTree = "<group>";
-		};
-		F325E19F1FECB7BF00028C1A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F325E1A01FECB7BF00028C1A /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		F325E1A11FECB7BF00028C1A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F325E1A21FECB7BF00028C1A /* AppDelegate */ = {
@@ -356,13 +165,6 @@
 				F325E1B91FF3366300028C1A /* AppDelegate+AppService.m */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		F325E1A51FECB7BF00028C1A /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		F325E1A61FECB7BF00028C1A /* Supporting Flies */ = {
@@ -397,10 +199,10 @@
 		F3BD64861FEC1339005EAB31 /* AIAPP */ = {
 			isa = PBXGroup;
 			children = (
-				F325E17F1FECB7BF00028C1A /* AIHelper */,
-				F325E1891FECB7BF00028C1A /* AIModules */,
+				187BA3CE24EFB52100D76767 /* AIViewController.h */,
+				187BA3CF24EFB52100D76767 /* AIViewController.m */,
+				187BA3BC24EF7F6100D76767 /* AICommon */,
 				F325E1A21FECB7BF00028C1A /* AppDelegate */,
-				F325E1A51FECB7BF00028C1A /* Resource */,
 				F325E1A61FECB7BF00028C1A /* Supporting Flies */,
 			);
 			path = AIAPP;
@@ -418,7 +220,6 @@
 				F3BD64811FEC1339005EAB31 /* Frameworks */,
 				F3BD64821FEC1339005EAB31 /* Resources */,
 				F95F1E83E7DB886204433A18 /* [CP] Embed Pods Frameworks */,
-				1B797332123A022336DEBFCD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -440,8 +241,8 @@
 				TargetAttributes = {
 					F3BD64831FEC1339005EAB31 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = YL9V9X796U;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = FEJ3TK6P5H;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -450,6 +251,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -482,28 +284,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AIAPP-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		1B797332123A022336DEBFCD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AIAPP/Pods-AIAPP-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F95F1E83E7DB886204433A18 /* [CP] Embed Pods Frameworks */ = {
@@ -512,13 +302,30 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIAPP/Pods-AIAPP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
+				"${BUILT_PRODUCTS_DIR}/LKDBHelper/LKDBHelper.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LKDBHelper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AIAPP/Pods-AIAPP-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AIAPP/Pods-AIAPP-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -528,9 +335,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187BA3CD24EF80A500D76767 /* NSObject+AICommon.m in Sources */,
 				F325E1BA1FF3366300028C1A /* AppDelegate+AppService.m in Sources */,
 				F325E1B31FECB7BF00028C1A /* main.m in Sources */,
 				F325E1AE1FECB7BF00028C1A /* AppDelegate.m in Sources */,
+				187BA3D024EFB52100D76767 /* AIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,13 +441,15 @@
 			baseConfigurationReference = 016E0B101B3405D3328A1B37 /* Pods-AIAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YL9V9X796U;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FEJ3TK6P5H;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AIAPP/Supporting Flies/PrefixHeader.pch";
-				INFOPLIST_FILE = AIAPP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AIAPP/Supporting Flies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hikvision.AIAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = gujiangjiang_hikvision_wildcard_dev;
 			};
 			name = Debug;
 		};
@@ -647,13 +458,15 @@
 			baseConfigurationReference = 50C2C51149336170B243D1FE /* Pods-AIAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YL9V9X796U;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FEJ3TK6P5H;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AIAPP/Supporting Flies/PrefixHeader.pch";
-				INFOPLIST_FILE = AIAPP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AIAPP/Supporting Flies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hikvision.AIAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = gujiangjiang_hikvision_wildcard_dev;
 			};
 			name = Release;
 		};
